@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="description" content="BattleSpace is a two-dimensional fixed shooter game in which the player controls a laser cannon by moving it horizontally across the bottom of the screen and firing at descending aliens.">
+
+		<link rel="icon" href="img/favicon/favicon.ico" type="img/favicon" sizes="16x16">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<title>BattleSpace</title>
+    </head>
+    
+	<body>
+	<div id="starfield"></div>
+		<div class="container">
+			<div id="game-interface">
+				<div id="game-interface--info">
+					<small>Space - стрельба</small><br>
+					<small>Left/Right - передвижение</small>
+				</div>
+				<div id="game-interface-m--info">
+					<small>Тап по экрану - стрельба</small><br>
+					<small>Наклон влево/вправо - передвижение</small>
+				</div>				
+				<div id="game-interface--indicators">
+					<span id="score"></span>
+				</div>
+			</div>
+	  		
+			<canvas width="900" height="600" id="screen">Your browser does not support the HTML5 canvas tag.</canvas>
+		</div>
+
+		<button class="gamechange" id="start" type="button" onclick="startLoop(); this.style.display = 'none';">Start Game</button>
+		<button class="gamechange" id="pause" onclick="startLoop(); this.style.display ='none';">Pause</button>
+		
+		<div id="modal-gameover">
+			<h2>Вы проиграли!</h2>
+			<p>Чтобы попробовать снова нажмите клавишу F5 или кликните по кнопке <br/> 
+				<button onclick="location.href = location.href;" type="button" value="button">Заново</button>
+			</p>
+		</div>
+		
+		<div id="modal-gamewin">
+			<h2>Поздравляем! Вы выиграли!</h2>
+			<p>Чтобы попробовать снова нажмите клавишу F5 или кликните по кнопке <br/> 
+				<button onclick="location.href = location.href;" type="button" value="button">Заново</button>
+			</p>
+		</div>
+
+		<script src="js/starfield.js"></script>
+		<script src="js/game.js"></script>
+	</body>
+</html>

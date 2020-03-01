@@ -1,0 +1,663 @@
+@font-face {
+  font-family: 'MetaSerifPro';
+  src: url('../assets/fonts/MetaSerifPro-BlackItalic.eot');
+  src: local('../assets/fonts/MetaSerifPro-BlackItalic'),
+    url('../assets/fonts/MetaSerifPro-BlackItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/MetaSerifPro-BlackItalic.woff2') format('woff2'),
+    url('../assets/fonts/MetaSerifPro-BlackItalic.woff') format('woff'),
+    url('../assets/fonts/MetaSerifPro-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MetaSerifPro';
+  src: url('../assets/fonts/MetaSerifPro-Medium.eot');
+  src: local('../assets/fonts/MetaSerifPro-Medium'),
+    url('../assets/fonts/MetaSerifPro-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/MetaSerifPro-Medium.woff2') format('woff2'),
+    url('../assets/fonts/MetaSerifPro-Medium.woff') format('woff'),
+    url('../assets/fonts/MetaSerifPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MetaSerifPro';
+  src: url('../assets/fonts/MetaSerifPro-LightItalic.eot');
+  src: local('../assets/fonts/MetaSerifPro-LightItalic'),
+    url('../assets/fonts/MetaSerifPro-LightItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/MetaSerifPro-LightItalic.woff2') format('woff2'),
+    url('../assets/fonts/MetaSerifPro-LightItalic.woff') format('woff'),
+    url('../assets/fonts/MetaSerifPro-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '../assets/fonts/MetaSerifPro-Book';
+  src: url('../assets/fonts/MetaSerifPro-Book.eot');
+  src: local('../assets/fonts/MetaSerifPro-Book'),
+    url('../assets/fonts/MetaSerifPro-Book.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/MetaSerifPro-Book.woff2') format('woff2'),
+    url('../assets/fonts/MetaSerifPro-Book.woff') format('woff'),
+    url('../assets/fonts/MetaSerifPro-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MetaSerifPro';
+  src: url('../assets/fonts/MetaSerifPro-Black.eot');
+  src: local('../assets/fonts/MetaSerifPro-Black'),
+    url('../assets/fonts/MetaSerifPro-Black.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/MetaSerifPro-Black.woff2') format('woff2'),
+    url('../assets/fonts/MetaSerifPro-Black.woff') format('woff'),
+    url('../assets/fonts/MetaSerifPro-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MetaSerifPro';
+  src: url('../assets/fonts/MetaSerifPro-Light.eot');
+  src: local('../assets/fonts/MetaSerifPro-Light'),
+    url('../assets/fonts/MetaSerifPro-Light.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/MetaSerifPro-Light.woff2') format('woff2'),
+    url('../assets/fonts/MetaSerifPro-Light.woff') format('woff'),
+    url('../assets/fonts/MetaSerifPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MetaSerifPro';
+  src: url('../assets/fonts/MetaSerifPro-ExtraboldItalic.eot');
+  src: local('../assets/fonts/MetaSerifPro-ExtraboldItalic'),
+    url('../assets/fonts/MetaSerifPro-ExtraboldItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/MetaSerifPro-ExtraboldItalic.woff2') format('woff2'),
+    url('../assets/fonts/MetaSerifPro-ExtraboldItalic.woff') format('woff'),
+    url('../assets/fonts/MetaSerifPro-ExtraboldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MetaSerifPro';
+  src: url('../assets/fonts/MetaSerifPro-BoldItalic.eot');
+  src: local('../assets/fonts/MetaSerifPro-BoldItalic'),
+    url('../assets/fonts/MetaSerifPro-BoldItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/MetaSerifPro-BoldItalic.woff2') format('woff2'),
+    url('../assets/fonts/MetaSerifPro-BoldItalic.woff') format('woff'),
+    url('../assets/fonts/MetaSerifPro-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MetaSerifPro';
+  src: url('../assets/fonts/MetaSerifPro-Extrabold.eot');
+  src: local('../assets/fonts/MetaSerifPro-Extrabold'),
+    url('../assets/fonts/MetaSerifPro-Extrabold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/MetaSerifPro-Extrabold.woff2') format('woff2'),
+    url('../assets/fonts/MetaSerifPro-Extrabold.woff') format('woff'),
+    url('../assets/fonts/MetaSerifPro-Extrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '../assets/fonts/MetaSerifPro-BookItalic';
+  src: url('../assets/fonts/MetaSerifPro-BookItalic.eot');
+  src: local('../assets/fonts/MetaSerifPro-BookItalic'),
+    url('../assets/fonts/MetaSerifPro-BookItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/MetaSerifPro-BookItalic.woff2') format('woff2'),
+    url('../assets/fonts/MetaSerifPro-BookItalic.woff') format('woff'),
+    url('../assets/fonts/MetaSerifPro-BookItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MetaSerifPro';
+  src: url('../assets/fonts/MetaSerifPro-MediumItalic.eot');
+  src: local('../assets/fonts/MetaSerifPro-MediumItalic'),
+    url('../assets/fonts/MetaSerifPro-MediumItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/MetaSerifPro-MediumItalic.woff2') format('woff2'),
+    url('../assets/fonts/MetaSerifPro-MediumItalic.woff') format('woff'),
+    url('../assets/fonts/MetaSerifPro-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MetaSerifPro';
+  src: url('../assets/fonts/MetaSerifPro-Bold.eot');
+  src: local('../assets/fonts/MetaSerifPro-Bold'),
+    url('../assets/fonts/MetaSerifPro-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../assets/fonts/MetaSerifPro-Bold.woff2') format('woff2'),
+    url('../assets/fonts/MetaSerifPro-Bold.woff') format('woff'),
+    url('../assets/fonts/MetaSerifPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+$themes: (
+  light: (
+    divider: #eee,
+    backgroundColor: hsl(0, 0%, 100%),
+    textColor: hsl(0, 0%, 10%),
+    section: #fdfdfd,
+    bar: #eee
+  ),
+  dark: (
+    divider: #333,
+    backgroundColor: hsl(0, 0%, 5%),
+    textColor: hsl(0, 0%, 100%),
+    section: lighten(hsl(0%, 0%, 5%), 1.5%),
+    bar: hsl(0, 0%, 10%)
+  )
+);
+
+@mixin themed() {
+  @each $theme, $map in $themes {
+    &.theme-#{$theme},
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value
+          )
+        ) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function t($key) {
+  @return map-get($theme-map, $key);
+}
+
+.theme {
+  &-toggler {
+    position: absolute;
+    top: 2.25rem;
+    right: 1rem;
+    display: block;
+    width: 2em;
+    height: 2em;
+    outline: none;
+    border: none;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+
+    &[data-mode='light'] {
+      background-image: url('../assets//images/moon.svg');
+    }
+
+    &[data-mode='dark'] {
+      background-image: url('../assets//images/sun.svg');
+    }
+
+    @media screen and (min-width: 992px) {
+      transition: opacity 300ms ease;
+      opacity: 0.6;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+a {
+  color: #ff76a2;
+  outline-color: #f8e71c;
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 1.5;
+
+  @media screen and (min-width: 576px) {
+    font-size: 15px;
+  }
+
+  @media screen and (min-width: 992px) {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+::selection {
+  background: #ffea00;
+  color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: MetaSerifPro, 'system-ui', sans-serif;
+
+  @include themed() {
+    color: t('textColor');
+    background: t('backgroundColor');
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 75%;
+  text-align: center;
+
+  @include themed() {
+    border-bottom: 1px solid t('divider');
+  }
+}
+
+.container {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 832px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1rem;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+  min-height: 50%;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid transparent;
+
+    @include themed() {
+      border-bottom: 1px solid t('divider');
+    }
+  }
+
+  &:nth-child(2n) {
+    @include themed() {
+      background-color: t('section');
+      box-shadow: inset 0 1px 0 0 t('backgroundColor');
+    }
+  }
+}
+
+.experience {
+  &__list {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 0;
+    list-style-type: none;
+
+    &-item {
+      margin-bottom: 2rem;
+
+      &-title {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+// Color Variables ======================================
+$green: #75b800;
+$gray-light: #eef1f3;
+
+// Bar Variables ========================================
+$bar-size: 0.45rem;
+$bar-radius: 1rem;
+$bar-bg: rgba(0, 0, 0, 0.075);
+
+// Bar ============================================
+.progress-bar {
+  border-radius: $bar-radius;
+  overflow: hidden;
+  width: 100%;
+
+  span {
+    display: block;
+  }
+}
+
+.progress {
+  background: $green;
+  color: #fff;
+  padding: $bar-size;
+  width: 95%;
+}
+
+.bar {
+  @include themed() {
+    background: t('bar');
+  }
+}
+
+.skills {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+
+  &__item {
+    margin-bottom: 2rem;
+
+    &-name {
+      font-size: 1rem;
+      font-weight: 400;
+      margin-bottom: 0.35rem;
+    }
+
+    &-html {
+      .progress {
+        background: rgb(227, 76, 38);
+        width: 97%;
+      }
+    }
+
+    &-css {
+      .progress {
+        background: rgb(86, 61, 124);
+        width: 96%;
+      }
+    }
+
+    &-js {
+      .progress {
+        background: rgb(241, 224, 90);
+        width: 95%;
+      }
+    }
+
+    &-ts {
+      .progress {
+        background: rgb(0, 122, 204);
+        width: 93%;
+      }
+    }
+
+    &-react {
+      .progress {
+        background: rgb(97, 218, 251);
+        width: 92%;
+      }
+    }
+
+    &-react-native {
+      .progress {
+        background: rgb(5, 165, 209);
+        width: 85%;
+      }
+    }
+
+    &-node {
+      .progress {
+        background: rgb(67, 160, 71);
+        width: 74%;
+      }
+    }
+
+    &-mysql {
+      .progress {
+        background: rgb(68, 121, 161);
+        width: 68%;
+      }
+    }
+  }
+}
+
+.projects {
+  &__item {
+    display: block;
+    width: 100%;
+
+    @include themed() {
+      border-bottom: 1px solid t('divider');
+    }
+
+    @media screen and (min-width: 576px) {
+      display: flex;
+    }
+
+    &-content {
+      padding-right: 0;
+      order: initial;
+
+      @media screen and (min-width: 576px) {
+        padding-right: 1rem;
+        order: 0;
+      }
+    }
+
+    &-media,
+    &-content {
+      width: 100%;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+
+      @media screen and (min-width: 576px) {
+        width: 50%;
+      }
+    }
+
+    &-media {
+      position: relative;
+      display: block;
+      height: 0;
+      padding-top: 56.25%;
+      order: initial;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media screen and (min-width: 576px) {
+        padding-top: 36.25%;
+        order: 1;
+      }
+
+      &-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: 4.5em;
+        height: 4.5em;
+        background-size: cover;
+        transform: translate(-50%, -50%);
+
+        @media screen and (min-width: 576px) {
+          width: 3.5em;
+          height: 3.5em;
+        }
+      }
+    }
+
+    &-theroar {
+      & .projects__item-media {
+        background-color: #02bbd3;
+
+        &-icon {
+          background-image: url('../assets/images/roar.svg');
+        }
+      }
+    }
+
+    &-reduction {
+      & .projects__item-media {
+        background-color: #3849a2;
+
+        &-icon {
+          background-image: url('../assets/images/reduction.svg');
+        }
+      }
+    }
+
+    &-themost {
+      & .projects__item-media {
+        background-color: #00b41c;
+
+        &-icon {
+          background-image: url('../assets/images/themost.svg');
+        }
+      }
+    }
+
+    &-karofilm {
+      & .projects__item-media {
+        background-color: #162027;
+
+        &-icon {
+          background-image: url('../assets/images/karofilm.svg');
+        }
+      }
+    }
+
+    &-schedule {
+      & .projects__item-media {
+        background-color: #5269c4;
+
+        &-icon {
+          background-image: url('../assets/images/schedule.svg');
+        }
+      }
+    }
+
+    &-schedule-admin {
+      & .projects__item-media {
+        background-color: #38498c;
+
+        &-icon {
+          background-image: url('../assets/images/schedule-admin.svg');
+        }
+      }
+    }
+
+    &-new-providence {
+      & .projects__item-media {
+        background-color: #267df4;
+
+        &-icon {
+          background-image: url('../assets/images/newprovidence.svg');
+        }
+      }
+    }
+
+    &-battlespace {
+      & .projects__item-media {
+        background-color: #80cb89;
+
+        &-icon {
+          background-image: url('../assets/images/battlespace.svg');
+        }
+      }
+    }
+
+    &-mmio {
+      & .projects__item-media {
+        background-color: #eee;
+
+        &-icon {
+          background-image: url('../assets/images/mmio.svg');
+        }
+      }
+    }
+
+    &-blueasy {
+      & .projects__item-media {
+        background-color: #353f46;
+
+        &-icon {
+          background-image: url('../assets/images/blueasy.svg');
+        }
+      }
+    }
+  }
+}

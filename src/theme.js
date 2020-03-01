@@ -2,7 +2,11 @@ import initPrefersColorScheme from 'css-prefers-color-scheme';
 
 const prefersColorScheme = initPrefersColorScheme();
 const darkModeToggler = document.querySelector('.theme-toggler');
+const meta = document.createElement('meta');
 const body = document.body;
+
+const getThemeColor = () =>
+  window.getComputedStyle(document.body).backgroundColor;
 
 const applyDarkTheme = () => {
   if (body.classList.contains('theme-light')) {
@@ -28,6 +32,8 @@ if (chosenTheme) {
 
 prefersColorScheme.scheme === 'dark' ? applyDarkTheme() : applyLightTheme();
 darkModeToggler.dataset.mode = prefersColorScheme.scheme;
+meta.name = 'theme-color';
+meta.content = getThemeColor();
 
 const onTogglerClick = () => {
   if (prefersColorScheme.scheme === 'dark') {
@@ -40,8 +46,13 @@ const onTogglerClick = () => {
     applyLightTheme();
   }
 
+  if (meta) {
+    meta.content = getThemeColor();
+  }
+
   localStorage.setItem('theme', prefersColorScheme.scheme);
   darkModeToggler.dataset.mode = prefersColorScheme.scheme;
 };
 
 darkModeToggler.addEventListener('click', onTogglerClick);
+document.getElementsByTagName('head')[0].appendChild(meta);

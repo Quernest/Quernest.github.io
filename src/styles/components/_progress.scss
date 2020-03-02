@@ -1,0 +1,22 @@
+.progress-bar {
+  border-radius: $bar-radius;
+  overflow: hidden;
+  width: 100%;
+
+  span {
+    display: block;
+  }
+}
+
+.progress {
+  background: $green;
+  color: #fff;
+  padding: $bar-size;
+  width: 95%;
+}
+
+.bar {
+  @include themed() {
+    background: t('bar');
+  }
+}

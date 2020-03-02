@@ -1,0 +1,15 @@
+header {
+  display: table;
+  min-height: 75%;
+  width: 100%;
+
+  & > .container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  @include themed() {
+    border-bottom: 1px solid t('divider');
+  }
+}

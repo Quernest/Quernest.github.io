@@ -1,0 +1,37 @@
+.theme {
+  &-toggler {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: block;
+    width: 2em;
+    height: 2em;
+    outline: none;
+    border: none;
+    padding: 0;
+    background-size: 1.8em;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    z-index: $z-high;
+
+    &[data-mode='light'] {
+      background-image: url('../../../assets/images/moon.svg');
+    }
+
+    &[data-mode='dark'] {
+      background-image: url('../../../assets/images/sun.svg');
+    }
+
+    @media screen and (min-width: 992px) {
+      transition: opacity $default-transition-duration
+        $default-transition-timing;
+      opacity: 0.6;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

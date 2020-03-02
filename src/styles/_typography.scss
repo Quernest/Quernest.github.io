@@ -1,0 +1,231 @@
+@font-face {
+  font-family: 'MetaSerifPro';
+  src: url('../../assets/fonts/MetaSerifPro-BlackItalic.eot');
+  src: local('../../assets/fonts/MetaSerifPro-BlackItalic'),
+    url('../../assets/fonts/MetaSerifPro-BlackItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../assets/fonts/MetaSerifPro-BlackItalic.woff2') format('woff2'),
+    url('../../assets/fonts/MetaSerifPro-BlackItalic.woff') format('woff'),
+    url('../../assets/fonts/MetaSerifPro-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MetaSerifPro';
+  src: url('../../assets/fonts/MetaSerifPro-Medium.eot');
+  src: local('../../assets/fonts/MetaSerifPro-Medium'),
+    url('../../assets/fonts/MetaSerifPro-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../assets/fonts/MetaSerifPro-Medium.woff2') format('woff2'),
+    url('../../assets/fonts/MetaSerifPro-Medium.woff') format('woff'),
+    url('../../assets/fonts/MetaSerifPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MetaSerifPro';
+  src: url('../../assets/fonts/MetaSerifPro-LightItalic.eot');
+  src: local('../../assets/fonts/MetaSerifPro-LightItalic'),
+    url('../../assets/fonts/MetaSerifPro-LightItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../assets/fonts/MetaSerifPro-LightItalic.woff2') format('woff2'),
+    url('../../assets/fonts/MetaSerifPro-LightItalic.woff') format('woff'),
+    url('../../assets/fonts/MetaSerifPro-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '../../assets/fonts/MetaSerifPro-Book';
+  src: url('../../assets/fonts/MetaSerifPro-Book.eot');
+  src: local('../../assets/fonts/MetaSerifPro-Book'),
+    url('../../assets/fonts/MetaSerifPro-Book.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../assets/fonts/MetaSerifPro-Book.woff2') format('woff2'),
+    url('../../assets/fonts/MetaSerifPro-Book.woff') format('woff'),
+    url('../../assets/fonts/MetaSerifPro-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MetaSerifPro';
+  src: url('../../assets/fonts/MetaSerifPro-Black.eot');
+  src: local('../../assets/fonts/MetaSerifPro-Black'),
+    url('../../assets/fonts/MetaSerifPro-Black.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../assets/fonts/MetaSerifPro-Black.woff2') format('woff2'),
+    url('../../assets/fonts/MetaSerifPro-Black.woff') format('woff'),
+    url('../../assets/fonts/MetaSerifPro-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MetaSerifPro';
+  src: url('../../assets/fonts/MetaSerifPro-Light.eot');
+  src: local('../../assets/fonts/MetaSerifPro-Light'),
+    url('../../assets/fonts/MetaSerifPro-Light.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../assets/fonts/MetaSerifPro-Light.woff2') format('woff2'),
+    url('../../assets/fonts/MetaSerifPro-Light.woff') format('woff'),
+    url('../../assets/fonts/MetaSerifPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MetaSerifPro';
+  src: url('../../assets/fonts/MetaSerifPro-ExtraboldItalic.eot');
+  src: local('../../assets/fonts/MetaSerifPro-ExtraboldItalic'),
+    url('../../assets/fonts/MetaSerifPro-ExtraboldItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../assets/fonts/MetaSerifPro-ExtraboldItalic.woff2') format('woff2'),
+    url('../../assets/fonts/MetaSerifPro-ExtraboldItalic.woff') format('woff'),
+    url('../../assets/fonts/MetaSerifPro-ExtraboldItalic.ttf')
+      format('truetype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MetaSerifPro';
+  src: url('../../assets/fonts/MetaSerifPro-BoldItalic.eot');
+  src: local('../../assets/fonts/MetaSerifPro-BoldItalic'),
+    url('../../assets/fonts/MetaSerifPro-BoldItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../assets/fonts/MetaSerifPro-BoldItalic.woff2') format('woff2'),
+    url('../../assets/fonts/MetaSerifPro-BoldItalic.woff') format('woff'),
+    url('../../assets/fonts/MetaSerifPro-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MetaSerifPro';
+  src: url('../../assets/fonts/MetaSerifPro-Extrabold.eot');
+  src: local('../../assets/fonts/MetaSerifPro-Extrabold'),
+    url('../../assets/fonts/MetaSerifPro-Extrabold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../assets/fonts/MetaSerifPro-Extrabold.woff2') format('woff2'),
+    url('../../assets/fonts/MetaSerifPro-Extrabold.woff') format('woff'),
+    url('../../assets/fonts/MetaSerifPro-Extrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '../../assets/fonts/MetaSerifPro-BookItalic';
+  src: url('../../assets/fonts/MetaSerifPro-BookItalic.eot');
+  src: local('../../assets/fonts/MetaSerifPro-BookItalic'),
+    url('../../assets/fonts/MetaSerifPro-BookItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../assets/fonts/MetaSerifPro-BookItalic.woff2') format('woff2'),
+    url('../../assets/fonts/MetaSerifPro-BookItalic.woff') format('woff'),
+    url('../../assets/fonts/MetaSerifPro-BookItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MetaSerifPro';
+  src: url('../../assets/fonts/MetaSerifPro-MediumItalic.eot');
+  src: local('../../assets/fonts/MetaSerifPro-MediumItalic'),
+    url('../../assets/fonts/MetaSerifPro-MediumItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../assets/fonts/MetaSerifPro-MediumItalic.woff2') format('woff2'),
+    url('../../assets/fonts/MetaSerifPro-MediumItalic.woff') format('woff'),
+    url('../../assets/fonts/MetaSerifPro-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MetaSerifPro';
+  src: url('../../assets/fonts/MetaSerifPro-Bold.eot');
+  src: local('../../assets/fonts/MetaSerifPro-Bold'),
+    url('../../assets/fonts/MetaSerifPro-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../assets/fonts/MetaSerifPro-Bold.woff2') format('woff2'),
+    url('../../assets/fonts/MetaSerifPro-Bold.woff') format('woff'),
+    url('../../assets/fonts/MetaSerifPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: $font-family-base;
+
+  // add ligatures
+  font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  font-variant-ligatures: common-ligatures discretionary-ligatures
+    historical-ligatures;
+
+  // Two ways to smoothen type, they are disabled by default
+  // Enable only one of them if you need them
+  // 1.
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smooth: always;
+
+  // 2.
+  opacity: 0.99;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  font-weight: 300;
+  font-size: 1rem;
+}

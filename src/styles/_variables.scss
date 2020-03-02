@@ -1,0 +1,72 @@
+// typography
+$font-size-base: 16;
+$font-size-base-px: $font-size-base * 1px;
+$font-family-base: MetaSerifPro, 'system-ui', sans-serif;
+$line-height-base: 1.5;
+
+// z-index
+$z-low: 10;
+$z-mid: 100;
+$z-high: 1000;
+
+// colors
+$green: #75b800;
+$gray-light: #eef1f3;
+
+$color-link-default: #ff76a2;
+$color-link-visited: $color-link-default;
+$color-link-hover: darken($color-link-default, 20%);
+$color-link-active: darken($color-link-default, 20%);
+
+// Text Selection
+$color-selection: #000;
+$color-selection-bg: #ffea00;
+
+// bar
+$bar-size: 0.45rem;
+$bar-radius: 1rem;
+$bar-bg: rgba(0, 0, 0, 0.075);
+
+/**
+ * Breakpoints
+ * =================================
+ */
+$breakpoints: (
+  xs: 480px,
+  sm: 576px,
+  md: 992px,
+  lg: 1200px
+);
+
+/**
+ * App-specific variables
+ * =================================
+ */
+$default-transition-timing: ease;
+$default-transition-duration: 300ms;
+
+// theme
+$themes: (
+  light: (
+    divider: #eee,
+    backgroundColor: hsl(0, 0%, 100%),
+    textColor: hsl(0, 0%, 10%),
+    section: #fdfdfd,
+    bar: #eee,
+    mailIcon: url('../../assets/images/mail-dark.svg'),
+    tgIcon: url('../../assets/images/telegram-dark.svg'),
+    inIcon: url('../../assets/images/linkedin-dark.svg'),
+    ghIcon: url('../../assets/images/github-dark.svg')
+  ),
+  dark: (
+    divider: #333,
+    backgroundColor: hsl(0, 0%, 5%),
+    textColor: hsl(0, 0%, 100%),
+    section: lighten(hsl(0%, 0%, 5%), 1.5%),
+    bar: hsl(0, 0%, 10%),
+    mailIcon: url('../../assets/images/mail-light.svg'),
+    tgIcon: url('../../assets/images/telegram-light.svg'),
+    inIcon: url('../../assets/images/linkedin-light.svg'),
+    ghIcon: url('../../assets/images/github-light.svg')
+  )
+);

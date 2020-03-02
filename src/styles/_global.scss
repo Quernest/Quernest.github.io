@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+::selection {
+  background: $color-selection-bg;
+  color: $color-selection;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  @include themed() {
+    color: t('textColor');
+    background: t('backgroundColor');
+  }
+}
+
+.container {
+  position: relative;
+  max-width: 832px;
+  padding: 0 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}

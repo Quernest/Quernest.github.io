@@ -172,14 +172,22 @@ $themes: (
     backgroundColor: hsl(0, 0%, 100%),
     textColor: hsl(0, 0%, 10%),
     section: #fdfdfd,
-    bar: #eee
+    bar: #eee,
+    mailIcon: url('../assets/images/mail-dark.svg'),
+    tgIcon: url('../assets/images/telegram-dark.svg'),
+    inIcon: url('../assets/images/linkedin-dark.svg'),
+    ghIcon: url('../assets/images/github-dark.svg')
   ),
   dark: (
     divider: #333,
     backgroundColor: hsl(0, 0%, 5%),
     textColor: hsl(0, 0%, 100%),
     section: lighten(hsl(0%, 0%, 5%), 1.5%),
-    bar: hsl(0, 0%, 10%)
+    bar: hsl(0, 0%, 10%),
+    mailIcon: url('../assets/images/mail-light.svg'),
+    tgIcon: url('../assets/images/telegram-light.svg'),
+    inIcon: url('../assets/images/linkedin-light.svg'),
+    ghIcon: url('../assets/images/github-light.svg')
   )
 );
 
@@ -490,8 +498,10 @@ $bar-bg: rgba(0, 0, 0, 0.075);
     display: block;
     width: 100%;
 
-    @include themed() {
-      border-bottom: 1px solid t('divider');
+    &:not(:last-of-type) {
+      @include themed() {
+        border-bottom: 1px solid t('divider');
+      }
     }
 
     @media screen and (min-width: 576px) {
@@ -647,6 +657,83 @@ $bar-bg: rgba(0, 0, 0, 0.075);
 
         &-icon {
           background-image: url('../assets/images/blueasy.svg');
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  padding: 2.5rem 0;
+
+  &-content {
+    @media screen and (min-width: 480px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  &__item {
+    margin-top: 1rem;
+
+    &:not(:first-of-type) {
+      margin-left: 1.5rem;
+    }
+
+    @media screen and (min-width: 480px) {
+      margin-top: 0;
+    }
+
+    &-icon {
+      display: inline-block;
+      width: 1.5em;
+      height: 1.5em;
+      background-size: 1.5em;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      @media screen and (min-width: 992px) {
+        transition: opacity 300ms ease;
+        opacity: 0.8;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      &-mail {
+        @include themed() {
+          background-image: t('mailIcon');
+        }
+      }
+
+      &-tg {
+        @include themed() {
+          background-image: t('tgIcon');
+        }
+      }
+
+      &-in {
+        background-size: 1.25em;
+
+        @include themed() {
+          background-image: t('inIcon');
+        }
+      }
+
+      &-gh {
+        @include themed() {
+          background-image: t('ghIcon');
         }
       }
     }

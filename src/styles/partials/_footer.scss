@@ -1,11 +1,26 @@
 .footer {
+  text-align: center;
   padding: 2.5rem 0;
 
+  &-copyright {
+    font-size: 1.15rem;
+  }
+
   &-content {
-    @media screen and (min-width: 480px) {
+    @include sm() {
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    .socials {
+      justify-content: center;
+      margin-top: 2rem;
+
+      @include sm() {
+        margin-top: 0;
+        justify-content: initial;
+      }
     }
   }
 }

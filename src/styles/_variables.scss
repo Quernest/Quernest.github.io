@@ -1,18 +1,38 @@
-// typography
+/**
+ * Typography
+ * =================================
+ */
 $font-size-base: 16;
 $font-size-base-px: $font-size-base * 1px;
 $font-family-base: MetaSerifPro, 'system-ui', sans-serif;
 $line-height-base: 1.5;
 
-// z-index
+/**
+ * Icon settings
+ * =================================
+ */
+$icon-size-base: 32;
+$icon-size-base-px: $icon-size-base * 1px;
+$icon-size-base-narrow: $icon-size-base - 8;
+$icon-size-base-narrow-px: $icon-size-base-narrow * 1px;
+
+$icon-opacity-base: 0.8;
+$icon-opacity-high: 0.6;
+
+/**
+ * Z-indexes
+ * =================================
+ */
 $z-low: 10;
 $z-mid: 100;
 $z-high: 1000;
 
-// colors
-$green: #75b800;
-$gray-light: #eef1f3;
-
+/**
+ * Colors
+ * =================================
+ */
+$color-green: #75b800;
+$color-gray-light: #eef1f3;
 $color-link-default: #ff76a2;
 $color-link-visited: $color-link-default;
 $color-link-hover: darken($color-link-default, 20%);
@@ -22,7 +42,10 @@ $color-link-active: darken($color-link-default, 20%);
 $color-selection: #000;
 $color-selection-bg: #ffea00;
 
-// bar
+/**
+ * Progress Bar
+ * =================================
+ */
 $bar-size: 0.45rem;
 $bar-radius: 1rem;
 $bar-bg: rgba(0, 0, 0, 0.075);
@@ -31,21 +54,16 @@ $bar-bg: rgba(0, 0, 0, 0.075);
  * Breakpoints
  * =================================
  */
-$breakpoints: (
-  xs: 480px,
-  sm: 576px,
-  md: 992px,
-  lg: 1200px
-);
+$screen-xs-min: 0;
+$screen-sm-min: 544px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
 
 /**
- * App-specific variables
+ * App Theme
  * =================================
  */
-$default-transition-timing: ease;
-$default-transition-duration: 300ms;
-
-// theme
 $themes: (
   light: (
     divider: #eee,
@@ -70,3 +88,10 @@ $themes: (
     ghIcon: url('../../assets/images/github-light.svg')
   )
 );
+
+/**
+ * App-specific variables
+ * =================================
+ */
+$default-transition-timing: ease;
+$default-transition-duration: 300ms;

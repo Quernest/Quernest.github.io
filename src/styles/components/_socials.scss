@@ -6,28 +6,22 @@
   list-style-type: none;
 
   &__item {
-    margin-top: 1rem;
-
     &:not(:first-of-type) {
-      margin-left: 1.5rem;
-    }
-
-    @media screen and (min-width: 480px) {
-      margin-top: 0;
+      margin-left: 1.75rem;
     }
 
     &-icon {
       display: inline-block;
-      width: 1.5em;
-      height: 1.5em;
-      background-size: 1.5em;
+      width: em($icon-size-base);
+      height: em($icon-size-base);
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: center center;
 
-      @media screen and (min-width: 992px) {
+      @include md() {
         transition: opacity $default-transition-duration
           $default-transition-timing;
-        opacity: 0.8;
+        opacity: $icon-opacity-base;
         cursor: pointer;
 
         &:hover {
@@ -48,7 +42,7 @@
       }
 
       &-in {
-        background-size: 1.25em;
+        background-size: em($icon-size-base-narrow);
 
         @include themed() {
           background-image: t('inIcon');

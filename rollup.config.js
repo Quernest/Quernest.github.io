@@ -27,7 +27,7 @@ export default {
     postcss({
       extract: true,
       minimize: production,
-      plugins: production ? [autoprefixer()] : []
+      plugins: [autoprefixer()]
     }),
     buble(),
     production && terser()

@@ -7,6 +7,7 @@ import serve from 'rollup-plugin-serve';
 import livereload from 'rollup-plugin-livereload';
 import image from '@rollup/plugin-image';
 import url from '@rollup/plugin-url';
+import buble from 'rollup-plugin-buble';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -28,6 +29,7 @@ export default {
       minimize: production,
       plugins: production ? [autoprefixer()] : []
     }),
+    buble(),
     production && terser()
   ]
 };

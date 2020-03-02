@@ -225,10 +225,12 @@ $themes: (
     height: 2em;
     outline: none;
     border: none;
-    background-size: cover;
-    background-position: center center;
+    padding: 0;
+    background-size: 1.8em;
+    background-position: 0 0;
     background-repeat: no-repeat;
     background-color: transparent;
+    z-index: 1000;
 
     &[data-mode='light'] {
       background-image: url('../assets//images/moon.svg');
@@ -328,11 +330,15 @@ body {
 }
 
 header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: table;
   min-height: 75%;
-  text-align: center;
+  width: 100%;
+
+  & > .container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
 
   @include themed() {
     border-bottom: 1px solid t('divider');
@@ -341,20 +347,25 @@ header {
 
 .container {
   position: relative;
-  display: block;
-  width: 100%;
   max-width: 832px;
-  margin-right: auto;
-  margin-left: auto;
   padding: 0 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 section {
   display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 5rem 0;
-  min-height: 50%;
+  width: 100%;
+
+  @supports not (old: ie) {
+    min-height: 50%;
+  }
+
+  & > .container {
+    margin: auto;
+  }
 
   &:not(:last-child) {
     border-bottom: 1px solid transparent;
@@ -380,10 +391,16 @@ section {
     list-style-type: none;
 
     &-item {
-      margin-bottom: 2rem;
+      &:not(:last-of-type) {
+        margin-bottom: 2rem;
+      }
 
       &-title {
         margin-bottom: 0.5rem;
+      }
+
+      &-subtitle {
+        margin-bottom: 0;
       }
     }
   }

@@ -1,4 +1,9 @@
 {
+  "version": "1.0.0",
+  "author": {
+    "name": "Quernest"
+  },
+  "license": "MIT",
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w"

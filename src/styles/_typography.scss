@@ -1,9 +1,6 @@
 @font-face {
   font-family: 'MetaSerifPro';
-  src: url('../../assets/fonts/MetaSerifPro-LightItalic.eot');
   src: local('../../assets/fonts/MetaSerifPro-LightItalic'),
-    url('../../assets/fonts/MetaSerifPro-LightItalic.eot?#iefix')
-      format('embedded-opentype'),
     url('../../assets/fonts/MetaSerifPro-LightItalic.woff2') format('woff2'),
     url('../../assets/fonts/MetaSerifPro-LightItalic.woff') format('woff'),
     url('../../assets/fonts/MetaSerifPro-LightItalic.ttf') format('truetype');
@@ -14,10 +11,7 @@
 
 @font-face {
   font-family: 'MetaSerifPro';
-  src: url('../../assets/fonts/MetaSerifPro-Light.eot');
   src: local('../../assets/fonts/MetaSerifPro-Light'),
-    url('../../assets/fonts/MetaSerifPro-Light.eot?#iefix')
-      format('embedded-opentype'),
     url('../../assets/fonts/MetaSerifPro-Light.woff2') format('woff2'),
     url('../../assets/fonts/MetaSerifPro-Light.woff') format('woff'),
     url('../../assets/fonts/MetaSerifPro-Light.ttf') format('truetype');
@@ -28,10 +22,7 @@
 
 @font-face {
   font-family: 'MetaSerifPro';
-  src: url('../../assets/fonts/MetaSerifPro-Medium.eot');
   src: local('../../assets/fonts/MetaSerifPro-Medium'),
-    url('../../assets/fonts/MetaSerifPro-Medium.eot?#iefix')
-      format('embedded-opentype'),
     url('../../assets/fonts/MetaSerifPro-Medium.woff2') format('woff2'),
     url('../../assets/fonts/MetaSerifPro-Medium.woff') format('woff'),
     url('../../assets/fonts/MetaSerifPro-Medium.ttf') format('truetype');
@@ -42,10 +33,7 @@
 
 @font-face {
   font-family: 'MetaSerifPro';
-  src: url('../../assets/fonts/MetaSerifPro-Bold.eot');
   src: local('../../assets/fonts/MetaSerifPro-Bold'),
-    url('../../assets/fonts/MetaSerifPro-Bold.eot?#iefix')
-      format('embedded-opentype'),
     url('../../assets/fonts/MetaSerifPro-Bold.woff2') format('woff2'),
     url('../../assets/fonts/MetaSerifPro-Bold.woff') format('woff'),
     url('../../assets/fonts/MetaSerifPro-Bold.ttf') format('truetype');
@@ -55,9 +43,9 @@
 }
 
 html {
-  font-size: $font-size-base;
+  font-size: $font-size-base-px;
   line-height: $line-height-base;
-  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {

@@ -1,15 +1,8 @@
 header {
-  display: table;
-  min-height: 75%;
-  width: 100%;
-
-  & > .container {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-  }
-
-  @include themed() {
-    border-bottom: 1px solid t('divider');
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 100%;
+  text-align: center;
 }

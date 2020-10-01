@@ -1,4 +1,6 @@
 .theme {
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
+
   &-toggler {
     position: absolute;
     top: 1rem;

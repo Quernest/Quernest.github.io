@@ -78,8 +78,8 @@ $themes: (
   ),
   dark: (
     divider: #333,
-    backgroundColor: hsl(0, 0%, 5%),
-    textColor: hsl(0, 0%, 100%),
+    backgroundColor: #0D1117,
+    textColor: #C9D1D9,
     section: lighten(hsl(0%, 0%, 5%), 1.5%),
     bar: hsl(0, 0%, 10%),
     mailIcon: url('../../assets/images/mail-light.svg'),

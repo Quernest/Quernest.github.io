@@ -1,5 +1,6 @@
 .theme {
-  transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  transition: color $default-transition-duration $default-transition-timing,
+    background-color $default-transition-duration $default-transition-timing;
 
   &-toggler {
     position: absolute;
@@ -15,12 +16,12 @@
     background-color: transparent;
     z-index: $z-high;
 
-    &[data-mode='light'] {
-      background-image: url('../../../assets/images/moon.svg');
+    &[data-mode="light"] {
+      background-image: url("../../../assets/images/moon.svg");
     }
 
-    &[data-mode='dark'] {
-      background-image: url('../../../assets/images/sun.svg');
+    &[data-mode="dark"] {
+      background-image: url("../../../assets/images/sun.svg");
     }
 
     @include md() {

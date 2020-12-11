@@ -1,13 +1,11 @@
 import initPrefersColorScheme from "css-prefers-color-scheme";
 
-import {
-  SCHEME_DARK,
-  SCHEME_LIGHT,
-  THEME_META_NAME,
-  THEME_DARK_CLASS,
-  THEME_LIGHT_CLASS,
-  THEME_LOCAL_STORAGE_KEY,
-} from "./constants";
+const THEME_LOCAL_STORAGE_KEY = 'theme';
+const THEME_DARK_CLASS = 'theme-dark';
+const THEME_LIGHT_CLASS = 'theme-light';
+const THEME_META_NAME = 'theme-color';
+const SCHEME_DARK = 'dark';
+const SCHEME_LIGHT = 'light';
 
 const prefersColorScheme = initPrefersColorScheme();
 const currentScheme = localStorage.getItem(THEME_LOCAL_STORAGE_KEY);

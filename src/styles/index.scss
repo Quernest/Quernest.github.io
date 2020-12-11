@@ -1,20 +1,21 @@
-// core
+/**
+ * Core
+ * =================================
+ */
 @import 'variables';
 @import 'functions';
 @import 'mixins';
 @import 'typography';
 @import 'global';
 
-// components
-// @import 'components/links';
+/**
+ * Components
+ * =================================
+ */
 @import 'components/theme';
-// @import 'components/skills';
-// @import 'components/projects';
-// @import 'components/progress';
-// @import 'components/socials';
-// @import 'components/experience';
 
-// partials
+/**
+ * Partials
+ * =================================
+ */
 @import 'partials/header';
-// @import 'partials/section';
-// @import 'partials/footer';

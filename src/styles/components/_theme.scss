@@ -1,7 +1,4 @@
 .theme {
-  transition: color $default-transition-duration $default-transition-timing,
-    background-color $default-transition-duration $default-transition-timing;
-
   &-toggler {
     position: absolute;
     top: 1rem;
@@ -26,8 +23,6 @@
 
     @include md() {
       top: 3rem;
-      transition: opacity $default-transition-duration
-        $default-transition-timing;
       opacity: $icon-opacity-high;
       cursor: pointer;
 

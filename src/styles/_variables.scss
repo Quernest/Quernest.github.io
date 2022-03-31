@@ -56,10 +56,12 @@ $screen-xl-min: 1200px;
  */
 $themes: (
   light: (
+    shadow: #1D1D1D,
     backgroundColor: #FFFFFF,
     textColor: #1D1D1D,
   ),
   dark: (
+    shadow: #1da9cc,
     backgroundColor: #06090F,
     textColor: #FCFCFC,
   )

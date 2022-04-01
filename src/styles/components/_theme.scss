@@ -11,6 +11,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-color: transparent;
+    opacity: $icon-opacity-high;
     z-index: $z-high;
 
     &[data-mode="light"] {
@@ -22,8 +23,6 @@
     }
 
     @include md() {
-      top: 3rem;
-      opacity: $icon-opacity-high;
       cursor: pointer;
 
       &:hover {

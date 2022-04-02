@@ -1,1 +1,1 @@
-fetch('https://quernest-api.herokuapp.com/ip');
+fetch('https://quernest-api.herokuapp.com/info');

@@ -1,2 +1,2 @@
 import './theme';
-import './ip';
+import './view';

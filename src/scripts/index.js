@@ -1,2 +1,1 @@
-import './view';
 import './theme';
